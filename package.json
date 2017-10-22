@@ -1,0 +1,25 @@
+{
+  "name": "hasura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunalp-jain/webapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunalp-jain/webapp/issues"
+  },
+  "homepage": "https://github.com/kunalp-jain/webapp#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express-session": "^1.15.4",
+    "pg": "^7.0.2"
+  }
+}

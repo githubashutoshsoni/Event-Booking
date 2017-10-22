@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log-In</title>
+<link rel="stylesheet" type="text/css" href="samplecss.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="om.js"></script>
+<link rel="shortcut icon" href="/home/kunal/Downloads/AAEAAQAAAAAAAAfiAAAAJDg2YTQ1MTFiLWUyZGUtNDVhNi04YTgxLTdjNmI3OGUzYWYyMA (1).ico" />
+</head>
+
+<body>
+<!--
+ <script src="https://github.com/hasura/js-sdk/releases/download/v0.1.1/hasura.min.js"></script>
+    <script>
+        hasura.setBaseDomain('c100.hasura.me');//the domain you have set on dashboard.hasura.io will come here
+        hasura.disableHttps(); // No HTTPS enabled on local-development
+
+        if(!(hasura.user.token==null)){
+        	window.location="/book"//redirects to the page you want the user to land onto after login
+        }
+
+        function loginaction(){
+    		var username = document.forms["login-form"]["username"].value;
+    		var password = document.forms["login-form"]["password"].value;
+    		if(username&&password){
+    		hasura.setUsername(username)
+
+    		function mySuccessHandler (data) {
+				if(hasura.user.token){
+				alert("login Success")
+				window.location="index.html";
+				}
+				else{
+					alert("Error Fetching Auth token, Please Login again")
+				}
+				}
+
+			function myErrorHandler (e) {
+				  console.log(e);
+				  alert("Login Failed, Please try again")
+				}
+
+			hasura.auth.login(password,
+				  mySuccessHandler,
+				  myErrorHandler
+				);
+		}
+		else{
+			alert("Username or Password cannot be empty");
+		}
+
+    	}
+
+    	function signupaction(){
+    		var username = document.forms["register-form"]["username"].value;
+    		var password = document.forms["register-form"]["password"].value;
+    		var email = document.forms["register-form"]["email"].value;
+    		if(username&&password&&email){
+    		hasura.setUsername(username)
+    		hasura.user.email = email;
+
+    		function mySuccessHandler () {
+    			alert("Signup success")
+    			if(hasura.user.token){
+				window.location="index.html";
+				}
+				else{
+					alert("Error fetching auth token , Please sign in again");
+				}
+				}
+
+			function myErrorHandler () {
+				  alert("Signup Failed, Please try again")
+				}
+
+
+			hasura.auth.signup(password,"option",
+				  mySuccessHandler,
+				  myErrorHandler
+				);
+
+		}
+		else{
+			alert("All feilds are Required");
+		}
+
+    	}
+    </script>
+
+-->
+<input type="text" id="username" placeholder="username" />
+<input type="password" id="password" />
+<input type="submit" id="login_btn" value="Login"onclick="live()" />
+       <input type="submit" id="register_btn" value="Register" /></body>
+
+</html>

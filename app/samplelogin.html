@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log-In</title>
+<link rel="stylesheet" type="text/css" href="samplecss.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="/home/kunal/Downloads/AAEAAQAAAAAAAAfiAAAAJDg2YTQ1MTFiLWUyZGUtNDVhNi04YTgxLTdjNmI3OGUzYWYyMA (1).ico" />
+</head>
+
+<body>
+ 
+
+
+
+   <div class="login-page">
+  <div class="form">
+    <form class="register-form" name = "register-form" method="POST">
+      <input type="text" name = "username" placeholder="name"/>
+      <input type="password" name = "password"  placeholder="password"/>
+      <input type="text" name="email" placeholder="email address"/>
+      <button type = "button" onclick="window.location='/index.html'">Sign Up</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form" name="login-form" method="POST">
+      <input type="text" name= "username" placeholder="username"/>
+      <input type="password" name="password" placeholder="password"/>
+      <button type = "button" onclick="window.location='/index.html'">login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+    <script>
+    	$('.message a').click(function(){
+   		$('form').animate({height: "toggle", opacity: "toggle"}, "fast");
+		});
+    </script>
+</body>
+
+</html>
